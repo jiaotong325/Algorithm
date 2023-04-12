@@ -1,6 +1,23 @@
 1. 调研学习Voronoi图及相关算法，并给出至少一个应用。
 
+###### Voronoi图： 在二维中，由一系列种子点的垂直平分线构成；三维中由一系列种子点的垂直平分面构成。对于给定的一组点，Voronoi 图将空间分割成由各个点为中心的区域，每个点的区域称为 Voronoi 单元，满足该点到相邻 Voronoi 单元的点的距离大于该点到其他任意点的距离。
 
+Voronoi图相关的算法有：
+
+1. Fortune算法：Fortune算法是Voronoi图计算的标准算法之一，时间复杂度为O(nlogn)。它是基于扫描线的思想，将每个点的切线作为扫描线，对每个点进行处理。Fortune算法在实现过程中需要用到平衡树来维护当前点集的Delunay三角剖分。
+2. 基于Delaunay三角剖分的算法：Voronoi图和Delaunay三角剖分有着密切的关系，它们是互相对偶的。因此，可以通过计算Delaunay三角剖分，然后从中推导出Voronoi图。这种方法的时间复杂度也是O(nlogn)。
+3. Bowyer-Watson算法：Bowyer-Watson算法也是基于Delaunay三角剖分的思想。它是一种递归算法，逐步向Delaunay三角剖分中加入新的点，并根据新的点来更新Delaunay三角剖分。Bowyer-Watson算法的时间复杂度也是O(nlogn)。、
+4. Fortune-Sweepline算法：该算法将Fortune算法与空间分治算法相结合，将原始点集按照空间位置划分到不同的区域中，并在每个区域内运行Fortune算法，然后将不同区域的Voronoi图合并成整体的Voronoi图。这种方法可以在分布式计算环境中实现，时间复杂度也是O(nlogn)。
+5. 层次Voronoi图算法：该算法是一种递归算法，通过将空间分成不同的层次，然后在每一层计算出Voronoi图，再将不同层次的Voronoi图合并成整体的Voronoi图。该算法可以快速计算出大规模点集的Voronoi图，时间复杂度为O(nlogn)。
+
+
+
+应用：
+
+1. Voronoi图在机器人避障中有广泛的应用，Voronoi图主要将机器人周围的障碍物分割为一个个几何图形，并计算出机器人能够通过的最短路径，从而避免与障碍物碰撞。
+2. Voronoi图在气象学中也有广泛应用，如气象站的布局中，需要考虑到气象数据的准确性和覆盖范围，而Voronoi图可以根据气象站的位置信息生成一组覆盖范围相对均匀的区域，从而确定气象站的最佳布局。
+3. 在气候模拟中，Voronoi图可以用于空间插值。例如，在一组气象站数据中，可以使用Voronoi图将空间分割成多个单元，对每个单元中的气象数据插值，从而得到全局的气象数据分布。
+4. Voronoi图还应用于地貌分析，地貌分析中，Voronoi图可用于地形特征的提取和分类。例如可以使用Voronoi图将地形特征分割成不同的区域，然后对每个区域进行高程、坡度等地形特征的统计和分析，从而更好地理解地形特征的分布规律。
 
 
 
@@ -156,5 +173,3 @@ bool find_in_matrix(int** arr,int* m,int* n,int value){
 ![image-20230412014019889](C:\Users\liqi\AppData\Roaming\Typora\typora-user-images\image-20230412014019889.png)
 
 
-
-法四：四分

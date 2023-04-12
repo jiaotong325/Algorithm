@@ -17,9 +17,6 @@ bool Binary_search_s(int** arr,int* m,int* n,int value);
 bool find_in_matrix(int** arr,int* m,int* n,int value);
 
 
- 
-
-
 
 //¶ş·Ö²éÕÒ
 bool Binary_search(int* arr,int* n,int value){
