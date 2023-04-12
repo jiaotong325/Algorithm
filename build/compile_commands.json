@@ -1,0 +1,8 @@
+[
+{
+  "directory": "E:/Documents/code/C_Cpp/Algorithm/build",
+  "command": "D:\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\algorithm.dir\\0331\\2-1.cpp.obj -c E:\\Documents\\code\\C_Cpp\\Algorithm\\0331\\2-1.cpp",
+  "file": "E:/Documents/code/C_Cpp/Algorithm/0331/2-1.cpp",
+  "output": "CMakeFiles/algorithm.dir/0331/2-1.cpp.obj"
+}
+]
