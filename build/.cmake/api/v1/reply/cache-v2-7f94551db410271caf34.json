@@ -2,6 +2,42 @@
 	"entries" : 
 	[
 		{
+			"name" : "Algorithm_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/Documents/code/C_Cpp/Algorithm/build"
+		},
+		{
+			"name" : "Algorithm_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Algorithm_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "E:/Documents/code/C_Cpp/Algorithm"
+		},
+		{
 			"name" : "BUILD_TESTING",
 			"properties" : 
 			[
@@ -703,7 +739,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/algorithm"
+			"value" : "C:/Program Files (x86)/Algorithm"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -923,7 +959,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "algorithm"
+			"value" : "Algorithm"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1740,42 +1776,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "TRUE"
-		},
-		{
-			"name" : "algorithm_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "E:/Documents/code/C_Cpp/Algorithm/build"
-		},
-		{
-			"name" : "algorithm_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "algorithm_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "E:/Documents/code/C_Cpp/Algorithm"
 		}
 	],
 	"kind" : "cache",

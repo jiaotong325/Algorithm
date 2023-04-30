@@ -510,41 +510,41 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named algorithm
+# Target rules for targets named Algorithm
 
 # Build rule for target.
-algorithm: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 algorithm
-.PHONY : algorithm
+Algorithm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Algorithm
+.PHONY : Algorithm
 
 # fast build rule for target.
-algorithm/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/build
-.PHONY : algorithm/fast
+Algorithm/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/build
+.PHONY : Algorithm/fast
 
-0331/2-1.obj: 0331/2-1.cpp.obj
-.PHONY : 0331/2-1.obj
+0412/2-1.obj: 0412/2-1.cpp.obj
+.PHONY : 0412/2-1.obj
 
 # target to build an object file
-0331/2-1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/0331/2-1.cpp.obj
-.PHONY : 0331/2-1.cpp.obj
+0412/2-1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/0412/2-1.cpp.obj
+.PHONY : 0412/2-1.cpp.obj
 
-0331/2-1.i: 0331/2-1.cpp.i
-.PHONY : 0331/2-1.i
+0412/2-1.i: 0412/2-1.cpp.i
+.PHONY : 0412/2-1.i
 
 # target to preprocess a source file
-0331/2-1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/0331/2-1.cpp.i
-.PHONY : 0331/2-1.cpp.i
+0412/2-1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/0412/2-1.cpp.i
+.PHONY : 0412/2-1.cpp.i
 
-0331/2-1.s: 0331/2-1.cpp.s
-.PHONY : 0331/2-1.s
+0412/2-1.s: 0412/2-1.cpp.s
+.PHONY : 0412/2-1.s
 
 # target to generate assembly for a file
-0331/2-1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\algorithm.dir\build.make CMakeFiles/algorithm.dir/0331/2-1.cpp.s
-.PHONY : 0331/2-1.cpp.s
+0412/2-1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Algorithm.dir\build.make CMakeFiles/Algorithm.dir/0412/2-1.cpp.s
+.PHONY : 0412/2-1.cpp.s
 
 # Help Target
 help:
@@ -585,10 +585,10 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
-	@echo ... algorithm
-	@echo ... 0331/2-1.obj
-	@echo ... 0331/2-1.i
-	@echo ... 0331/2-1.s
+	@echo ... Algorithm
+	@echo ... 0412/2-1.obj
+	@echo ... 0412/2-1.i
+	@echo ... 0412/2-1.s
 .PHONY : help
 
 

@@ -1,5 +1,5 @@
-CMakeFiles/Algorithm.dir/0331/2-1.cpp.obj: \
- E:\Documents\code\C_Cpp\Algorithm\0331\2-1.cpp \
+CMakeFiles/Algorithm.dir/0412/1-2.cpp.obj: \
+ E:\Documents\code\C_Cpp\Algorithm\0412\1-2.cpp \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -115,10 +115,4 @@ CMakeFiles/Algorithm.dir/0331/2-1.cpp.obj: \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_ios.tcc \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream.tcc \
  D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/istream \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc \
- D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ctime \
- D:/mingw64/x86_64-w64-mingw32/include/time.h \
- D:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
- D:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
- D:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
- D:/mingw64/x86_64-w64-mingw32/include/pthread_time.h
+ D:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/istream.tcc

@@ -26,7 +26,7 @@ E:/Documents/code/C_Cpp/Algorithm/build/CMakeFiles/ContinuousTest.dir
 E:/Documents/code/C_Cpp/Algorithm/build/CMakeFiles/ContinuousCoverage.dir
 E:/Documents/code/C_Cpp/Algorithm/build/CMakeFiles/ContinuousMemCheck.dir
 E:/Documents/code/C_Cpp/Algorithm/build/CMakeFiles/ContinuousSubmit.dir
-E:/Documents/code/C_Cpp/Algorithm/build/CMakeFiles/algorithm.dir
+E:/Documents/code/C_Cpp/Algorithm/build/CMakeFiles/Algorithm.dir
 E:/Documents/code/C_Cpp/Algorithm/build/CMakeFiles/package.dir
 E:/Documents/code/C_Cpp/Algorithm/build/CMakeFiles/package_source.dir
 E:/Documents/code/C_Cpp/Algorithm/build/CMakeFiles/test.dir

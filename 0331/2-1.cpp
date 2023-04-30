@@ -1,4 +1,4 @@
-//¶şÎ¬¾ØÕó²éÕÒËã·¨£¬ĞĞÁĞµİÔö
+//äºŒç»´çŸ©é˜µæŸ¥æ‰¾ç®—æ³•ï¼Œè¡Œåˆ—é€’å¢
 
 #include<iostream>
 #include<ctime>
@@ -8,17 +8,63 @@ using namespace std;
 #define M 15
 #define N 15
 
-//Ò»Î¬Êı×éµÄ¶ş·Ö²éÕÒ
+//ä¸€ç»´æ•°ç»„çš„äºŒåˆ†æŸ¥æ‰¾
 bool Binary_search(int* arr,int* n,int value);
-//¶şÎ¬¾ØÕó¶ş·Ö²éÕÒËã·¨£¬ĞĞÁĞµİÔö
+//äºŒç»´çŸ©é˜µäºŒåˆ†æŸ¥æ‰¾ç®—æ³•ï¼Œè¡Œåˆ—é€’å¢
 bool Binary_search_s(int** arr,int* m,int* n,int value);
 
-//¶şÎ¬¾ØÕó²éÕÒËã·¨£¬ĞĞÁĞµİÔö,·µ»ØÎ»ÖÃ
+//äºŒç»´çŸ©é˜µæŸ¥æ‰¾ç®—æ³•ï¼Œè¡Œåˆ—é€’å¢,è¿”å›ä½ç½®
 bool find_in_matrix(int** arr,int* m,int* n,int value);
 
+int main(){
+    int arr[M][N];
+    srand((unsigned)time(NULL));
+    cout<<"æ•°ç»„å…ƒç´ ä¸ºï¼š"<<endl;
+   
+    arr[0][0]=rand()%3;
+    cout<<arr[0][0]<<"\t";
+    //æ„é€ éšæœºè¡Œåˆ—é€’å¢äºŒç»´æ•°ç»„
+    for(int i=0;i<M;i++){
+        for(int j =0;j<N;j++){
 
+            if(i==0){
+                if(j==0){
+                    continue;
+                }
+                else{
+                    arr[i][j]=arr[i][j-1]+rand() % 2 + 1;//ç”Ÿæˆ1-3çš„éšæœºæ•°
+                    cout<<arr[i][j]<<"\t";
+                    continue;
+                }
+            }
+            if(j==0){
+                arr[i][j]=arr[i-1][j]+rand()%2+1;
+                cout<<arr[i][j]<<"\t";
+                continue;
+            }
+  
+            arr[i][j]=max(arr[i][j-1],arr[i-1][j])+rand()%2+1;
+            cout<<arr[i][j]<<"\t";
+        }
+        cout<<endl;
+    }
+    cout<<endl;
+    
+    int value = rand()%10;
+    cout<<"The random key is:"<<value<<endl;
+    int m =-1;
+    int n =-1;
 
-//¶ş·Ö²éÕÒ
+    if(Binary_search_s((int**)arr,&m,&n,value)){
+        cout<<"arr["<<m<<"]["<<n<<"]="<<value<<endl;
+    }
+    else{
+        cout<<"Not found "<<value<<"!"<<endl;
+    }
+    return 0;
+}
+
+//äºŒåˆ†æŸ¥æ‰¾
 bool Binary_search(int* arr,int* n,int value){
     int low = 0;
     int high = N-1;
@@ -41,7 +87,7 @@ bool Binary_search(int* arr,int* n,int value){
 
 bool Binary_search_s(int** arr,int* m,int* n,int value){
     for(int i=0;i<M;i++){
-        //cout<<*((int*)arr + 3)<<endl;   //¶Ô¶şÎ¬Êı×é·ÃÎÊ·½Ê½µÄ²»ÊìÏ¤
+        //cout<<*((int*)arr + 3)<<endl;   //å¯¹äºŒç»´æ•°ç»„è®¿é—®æ–¹å¼çš„ä¸ç†Ÿæ‚‰
         if(Binary_search((int*)arr+M*i,n,value)){
             *m=i;
             return true;
@@ -52,10 +98,10 @@ bool Binary_search_s(int** arr,int* m,int* n,int value){
 
 
 
-//×ÜÌåË¼Â·ÊÇ´ÓÓÒÉÏ½Ç¿ªÊ¼²éÕÒ£¬Èç¹û´óÓÚvalue£¬ÔòÁĞ¼õÒ»£¬Èç¹ûĞ¡ÓÚvalue£¬ÔòĞĞ¼ÓÒ»
+//æ€»ä½“æ€è·¯æ˜¯ä»å³ä¸Šè§’å¼€å§‹æŸ¥æ‰¾ï¼Œå¦‚æœå¤§äºvalueï¼Œåˆ™åˆ—å‡ä¸€ï¼Œå¦‚æœå°äºvalueï¼Œåˆ™è¡ŒåŠ ä¸€
 bool find_in_matrix(int** arr,int* m,int* n,int value){
-    //¶şÎ¬¾ØÕó²éÕÒËã·¨£¬ĞĞÁĞµİÔö
-    int row = 0;//ĞĞ,´ÓµÚÒ»ĞĞ×îºóÒ»¸öÔªËØ¿ªÊ¼
+    //äºŒç»´çŸ©é˜µæŸ¥æ‰¾ç®—æ³•ï¼Œè¡Œåˆ—é€’å¢
+    int row = 0;//è¡Œ,ä»ç¬¬ä¸€è¡Œæœ€åä¸€ä¸ªå…ƒç´ å¼€å§‹
     int col = N-1;
     while(row<M && col>=0){
         if(*((int*)arr+M*row+col)==value){

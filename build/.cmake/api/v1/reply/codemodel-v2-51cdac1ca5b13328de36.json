@@ -55,7 +55,7 @@
 					[
 						0
 					],
-					"name" : "algorithm",
+					"name" : "Algorithm",
 					"targetIndexes" : 
 					[
 						0,
@@ -92,6 +92,13 @@
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Algorithm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Algorithm-Debug-ecc3949a4ca3c0d75345.json",
+					"name" : "Algorithm",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Continuous::@6890427a1f51a3e7e1df",
@@ -286,13 +293,6 @@
 					"id" : "NightlyUpdate::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-NightlyUpdate-Debug-bb27d253346516b8f94e.json",
 					"name" : "NightlyUpdate",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "algorithm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-algorithm-Debug-da5586ef29cadcdff461.json",
-					"name" : "algorithm",
 					"projectIndex" : 0
 				}
 			]
